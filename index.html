@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-color: #d5e1ef;
+        --title-color: #1f314f;
+        --text-color: #68778d;
+        --spacing-s: 1rem;
+        --spacing-m: 1.5rem;
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0;
+        height: 100%;
+      }
+
+      main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color);
+      }
+
+      .card {
+        width: 100%;
+        max-width: 320px;
+        min-height: 500px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-m) 0;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
+      }
+
+      .card__image-wrapper {
+        width: 100%;
+        max-width: 288px;
+        aspect-ratio: 1 / 1;
+        margin: 0;
+      }
+
+      .card__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      .card__content {
+        width: 16rem;
+        margin-top: var(--spacing-m);
+      }
+
+      .card__title {
+        margin: 0;
+        font-size: clamp(1.2rem, 1rem + 1vw, 1.4rem);
+        font-weight: 700;
+        color: var(--title-color);
+        text-align: center;
+      }
+
+      .card__description {
+        margin-top: var(--spacing-s);
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-color);
+        text-align: center;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <article class="card">
+        <figure class="card__image-wrapper">
+          <img
+            class="card__image"
+            src="./images/image-qr-code.png"
+            alt="QR code to Frontend Mentor"
+          />
+        </figure>
+
+        <div class="card__content">
+          <h1 class="card__title">
+            Improve your front-end skills by building projects
+          </h1>
+
+          <p class="card__description">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
